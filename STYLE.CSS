@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EletroVolt - O Futuro sobre Rodas</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; }
+        header { background: #0d233a; color: #fff; padding: 20px; text-align: center; }
+        nav a { color: #00d285; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        .hero { background: #f4f4f9; padding: 60px 20px; text-align: center; }
+        .btn { background: #00d285; color: #fff; padding: 12px 24px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        .specs { display: flex; justify-content: space-around; padding: 40px 20px; background: #fff; }
+        .spec-box { border: 1px solid #ddd; padding: 20px; border-radius: 8px; width: 25%; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>EletroVolt</h1>
+        <nav>
+            <a href="#modelos">Modelos</a>
+            <a href="#autonomia">Autonomia</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Acelere rumo ao futuro sem emissões</h2>
+        <p>Conheça a nova geração de veículos elétricos de alta performance.</p>
+        <button class="btn">Agendar Test-Drive</button>
+    </section>
+
+    <section class="specs" id="autonomia">
+        <div class="spec-box">
+            <h3>500 km</h3>
+            <p>Autonomia por carga</p>
+        </div>
+        <div class="spec-box">
+            <h3>30 min</h3>
+            <p>Carga rápida (80%)</p>
+        </div>
+        <div class="spec-box">
+            <h3>0 a 100 km/h</h3>
+            <p>em 3,5 segundos</p>
+        </div>
+    </section>
+
+</body>
+</html>
