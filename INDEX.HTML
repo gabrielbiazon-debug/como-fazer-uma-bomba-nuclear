@@ -3,48 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EletroVolt - O Futuro sobre Rodas</title>
+    <title>VoltAuto - Veículos Elétricos</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; }
-        header { background: #0d233a; color: #fff; padding: 20px; text-align: center; }
-        nav a { color: #00d285; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        .hero { background: #f4f4f9; padding: 60px 20px; text-align: center; }
-        .btn { background: #00d285; color: #fff; padding: 12px 24px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
-        .specs { display: flex; justify-content: space-around; padding: 40px 20px; background: #fff; }
-        .spec-box { border: 1px solid #ddd; padding: 20px; border-radius: 8px; width: 25%; text-align: center; }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #212529;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0b132b;
+            color: #ffffff;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #00e676;
+            font-size: 1.8rem;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #00e676;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(11, 19, 43, 0.8), rgba(11, 19, 43, 0.8)), 
+                        url('https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            color: #ffffff;
+            text-align: center;
+            padding: 6rem 1rem;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #e0e0e0;
+        }
+
+        .btn {
+            background-color: #00e676;
+            color: #0b132b;
+            padding: 0.8rem 1.8rem;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #00c853;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 4rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #e9ecef;
+        }
+
+        .card h3 {
+            color: #1c2541;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            color: #6c757d;
+        }
+
+        footer {
+            background-color: #0b132b;
+            color: #ffffff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>EletroVolt</h1>
+        <h1>VoltAuto</h1>
         <nav>
-            <a href="#modelos">Modelos</a>
-            <a href="#autonomia">Autonomia</a>
+            <a href="#inicio">Início</a>
+            <a href="#recursos">Recursos</a>
             <a href="#contato">Contato</a>
         </nav>
     </header>
 
-    <section class="hero">
-        <h2>Acelere rumo ao futuro sem emissões</h2>
-        <p>Conheça a nova geração de veículos elétricos de alta performance.</p>
-        <button class="btn">Agendar Test-Drive</button>
+    <section class="hero" id="inicio">
+        <h2>O Futuro da Mobilidade Sustentável</h2>
+        <p>Desempenho zero emissão com até 600 km de autonomia por carga.</p>
+        <a href="#contato" class="btn">Agende um Test Drive</a>
     </section>
 
-    <section class="specs" id="autonomia">
-        <div class="spec-box">
-            <h3>500 km</h3>
-            <p>Autonomia por carga</p>
+    <section class="features" id="recursos">
+        <div class="card">
+            <h3>600 km</h3>
+            <p>Autonomia estendida em ciclo urbano e rodoviário.</p>
         </div>
-        <div class="spec-box">
-            <h3>30 min</h3>
-            <p>Carga rápida (80%)</p>
+        <div class="card">
+            <h3>20 min</h3>
+            <p>Recarga rápida de até 80% da bateria em estações DC.</p>
         </div>
-        <div class="spec-box">
-            <h3>0 a 100 km/h</h3>
-            <p>em 3,5 segundos</p>
+        <div class="card">
+            <h3>0 Emissões</h3>
+            <p>Tecnologia 100% elétrica sustentável para o meio ambiente.</p>
         </div>
     </section>
+
+    <footer id="contato">
+        <p>&copy; 2026 VoltAuto - Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>
